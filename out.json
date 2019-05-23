@@ -1,0 +1,157 @@
+{
+  "InputType": [
+    {
+      "type": "'abc'",
+      "Design": [
+        {
+          "name": "test",
+          "returnType": "string",
+          "inputType": "text",
+          "label": "测试"
+        }
+      ]
+    },
+    {
+      "type": "\"textstyle\"",
+      "Design": [
+        {
+          "name": "fontSize",
+          "returnType": "number",
+          "inputType": "text",
+          "label": "字号",
+          "validate": {
+            "require": true
+          }
+        },
+        {
+          "name": "fontWeight",
+          "returnType": "number",
+          "inputType": "text",
+          "label": "加粗",
+          "validate": {
+            "require": true
+          }
+        },
+        {
+          "name": "color",
+          "returnType": "string",
+          "inputType": "text",
+          "label": "颜色",
+          "validate": {
+            "require": true
+          }
+        },
+        {
+          "name": "fontFamily",
+          "returnType": "string",
+          "inputType": "text",
+          "label": "字体",
+          "validate": {
+            "require": true
+          }
+        },
+        {
+          "name": "fontStyle",
+          "returnType": "string",
+          "inputType": "text",
+          "label": "字体风格",
+          "validate": {
+            "require": true
+          }
+        },
+        {
+          "name": "letterSpacing",
+          "returnType": "number",
+          "inputType": "text",
+          "label": "字间距",
+          "validate": {
+            "require": true
+          }
+        },
+        {
+          "name": "lineHeight",
+          "returnType": "number",
+          "inputType": "text",
+          "label": "行间距",
+          "validate": {
+            "require": true
+          }
+        },
+        {
+          "name": "textAlign",
+          "returnType": "\"center\" | \"left\" | \"right\"",
+          "inputType": "text",
+          "label": "对齐方式",
+          "validate": {
+            "require": true
+          }
+        },
+        {
+          "name": "underline",
+          "returnType": "string",
+          "inputType": "text",
+          "label": "下划线",
+          "validate": {
+            "require": true
+          }
+        },
+        {
+          "name": "verticalAlign",
+          "returnType": "string",
+          "inputType": "text",
+          "label": "下划线",
+          "validate": {
+            "require": true
+          }
+        },
+        {
+          "name": "writingMode",
+          "returnType": "\"revert\" | \"unset\" | \"horizontal-tb\" | \"vertical-lr\" | \"vertical-rl\"",
+          "inputType": "text",
+          "label": "文本排布模式",
+          "validate": {
+            "require": true
+          }
+        }
+      ],
+      "Foo": [
+        {
+          "name": "fontWeight",
+          "returnType": "number",
+          "inputType": "text",
+          "label": "微软雅黑",
+          "validate": {
+            "require": true
+          }
+        }
+      ]
+    }
+  ],
+  "Props": [
+    {
+      "Design": [
+        {
+          "name": "text",
+          "returnType": "string",
+          "inputType": "text",
+          "label": "文本值",
+          "validate": {
+            "require": true
+          }
+        },
+        {
+          "name": "textstyle",
+          "returnType": "TextStyle",
+          "inputType": "textstyle",
+          "label": "样式"
+        }
+      ]
+    }
+  ],
+  "Component": [
+    {
+      "name": "\"z-text\"",
+      "version": "pkg.version"
+    }
+  ]
+}

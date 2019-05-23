@@ -1,0 +1,34 @@
+{
+  "name": "ts-metadata",
+  "version": "0.0.1",
+  "description": "typescript 元数据操作, 提取/删除",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "dev": "nodemon --exec node --inspect --require ts-node/register ./test/test.ts",
+    "test": "NODE_ENV=test ts-node ./test/test.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/galaa2011/ts-metadata.git"
+  },
+  "keywords": [
+    "typescript",
+    "decorator",
+    "metadata"
+  ],
+  "author": "galaa2011",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/galaa2011/ts-metadata/issues"
+  },
+  "homepage": "https://github.com/galaa2011/ts-metadata#readme",
+  "dependencies": {
+    "@types/node": "^12.0.2",
+    "typescript": "^3.4.5"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.0",
+    "ts-node": "^8.1.0"
+  }
+}
