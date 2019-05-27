@@ -96,9 +96,14 @@ class Compiler {
             if (arg) {
               const type = this._checker.getTypeAtLocation(arg);
               type.getProperties().forEach(symbol => {
+                const propertytType = this._checker.getTypeOfSymbolAtLocation(symbol, symbol.valueDeclaration);
                 const valueDeclaration = symbol.valueDeclaration as ts.PropertyDeclaration;
                 if (valueDeclaration.initializer) {
-                  declaration[symbol.name] = (valueDeclaration.initializer as IExpression).getText();
+                  const _value = (valueDeclaration.initializer as IExpression).getText();
+                  if (this._checker.typeToString(propertytType) !== "any") {
+                    eval(`_value = ${_value}`);
+                  }
+                  declaration[symbol.name] = _value;
                 }
               });
             }

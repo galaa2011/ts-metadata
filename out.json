@@ -1,7 +1,7 @@
 {
   "InputType": [
     {
-      "type": "'abc'",
+      "type": "abc",
       "Design": [
         {
           "name": "test",
@@ -12,7 +12,7 @@
       ]
     },
     {
-      "type": "\"textstyle\"",
+      "type": "textstyle",
       "Design": [
         {
           "name": "fontSize",
@@ -150,7 +150,7 @@
   ],
   "Component": [
     {
-      "name": "\"z-text\"",
+      "name": "z-text",
       "version": "pkg.version"
     }
   ]
